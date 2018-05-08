@@ -1,0 +1,54 @@
+/*
+** Overide layouts/side-menu.css
+**
+*/
+
+.pure-menu-heading {
+    text-transform: none;
+}
+#menu .pure-menu-heading {
+    font-size: 0.9em;
+}
+
+/*
+** This section is to arrange the profile link and log out link.
+** They are positioned side by side therefore these style settings
+** are solely to achieve such intended visuals.
+*/
+.menu-container {
+    width: auto;
+    height: 2em; /* this property might introduce problem */
+    position: static;
+}
+.menu-left {
+    height: auto;
+    width: 80%;
+    left: 0px;
+    position: absolute;
+}
+.menu-right {
+    height: auto;
+    width: 20%;
+    right: 0px;
+    position: absolute;   
+}
+
+/*
+** This section is for styling message bar
+**
+*/
+.message-bar {
+    height: 2em;
+    width: 100%;
+    bottom: 0px;
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    padding-top: 1px;
+}
+.message-bar p {
+    font-size: 0.8em;
+    color:#ccffff;
+    margin: 0px;
+    padding-top: 9px;
+    padding-left: 10px;
+}

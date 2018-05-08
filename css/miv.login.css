@@ -1,0 +1,62 @@
+/*
+** This stylesheet file is to overide pure.css in order
+** to give customization to the system appearance
+*/
+
+body {
+    background-color: #252526;
+    font-size: 0.9em;
+}
+label {
+    color: #f0f0f0;
+}
+fieldset {
+    margin: 0px auto;
+    width: 300px; 
+}
+
+#username, #password {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 0.3em 0.4em;
+}
+
+#login-box {
+    height: 400px;
+    width: 300px;
+    background-color: #1e1e1e;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+#login-box-header {
+    height: 100px;
+    width: auto;
+}
+#login-box-header-img {
+    height: 100px;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+#login-box-content {
+    padding-left: 60px;
+}
+
+.error-message-box {
+    height: auto;
+    width: 200px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    background-color: inherit; /* this property must be set for the 'color' property to work (???) */
+    color: white;
+
+}
+
+/* overide */
+.pure-menu-item {
+    height: 5%;
+}
