@@ -1,0 +1,6 @@
+#codeigniter 3
+.htaccess
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
+/vendor/
