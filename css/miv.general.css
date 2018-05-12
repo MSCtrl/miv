@@ -5,3 +5,11 @@
 .header h2 {
     color: white;
 }
+
+.post {
+    padding: 1em;
+    margin-bottom: 3em;
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+}

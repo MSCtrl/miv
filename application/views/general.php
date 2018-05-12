@@ -7,5 +7,11 @@
     <div class="content">
         <h2 class="content-subhead">Announcement</h2>
         <?php
-            echo $this->ance_model->get_announcement();
+            echo $this->ance_model->get_announcement2();
         ?>
+    </div>
+
+</div>
+</div>
+</body>
+</html>
