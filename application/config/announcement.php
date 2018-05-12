@@ -13,7 +13,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | defaulted to 30 days.
 |
 */
-$config['uptime'] = 60;
+$config['uptime'] = 10;
 //
 
 

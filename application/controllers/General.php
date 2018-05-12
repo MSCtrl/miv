@@ -25,19 +25,6 @@
             redirect(base_url());
         }
 
-        public function load_announcement() {
-            // Read configuration
-            $uptime = $this->config->item('uptime');
-
-            // Pull data from database
-            $ance_list = $this->ance_model->get_announcement($uptime);
-
-            // Loop each set
-            echo $ance_list;
-            // 
-        }
-
-
     }
 
 

@@ -40,8 +40,9 @@
                     $userpass = $this->users_model->getsessiondata($credentials);
 
                     $this->session->set_userdata($userpass);
+
                     $message = 'Logged on successfully';
-                    log_message('status', $message);
+                    log_message('status', '@'.$credentials['username'] . ' ' . $message);
                     $this->session->set_userdata('message', $message);
 
                     if(!isset($_SESSION))
