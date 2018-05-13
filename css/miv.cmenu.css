@@ -9,6 +9,15 @@
     font-size: 0.9em;
 }
 
+.header {
+    padding: 0px;
+    border: 0px;
+}
+body {
+    color: #777;
+    background: #fafafa;
+}
+
 /*
 ** This section is to arrange the profile link and log out link.
 ** They are positioned side by side therefore these style settings

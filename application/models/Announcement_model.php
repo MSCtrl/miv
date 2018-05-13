@@ -35,13 +35,12 @@
             foreach ($query->result() as $row)
             {
                 $str .= "<div class=\"post\">";
-                    $str .= "<p>" . $row->title . "</p>";
-                    $str .= "<p>" . $row->author . "</p>";
+                    $str .= "<h3 class=\"post-title\">" . $row->title . "</h3>";
 
-                    $str .= "<img src=\"data:image/jpeg;base64,".base64_encode($row->images)."\" />";
-                    $str .= "<p>" . $row->contents . "</p>";
+                    $str .= "<img class=\"post-img\" src=\"data:image/jpeg;base64,".base64_encode($row->images)."\" />";
+                    $str .= "<p class=\"post-text\">" . $row->contents . "</p>";
 
-                    $str .= "<p>" . $row->ance_date . " " . $row->ance_time . "</p>";
+                    $str .= "<p class=\"post-author\">" . $row->author . " " . $row->ance_date . " " . $row->ance_time . "</p>";
 
                 $str .= "</div>";
             }

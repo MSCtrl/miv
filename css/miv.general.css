@@ -7,9 +7,29 @@
 }
 
 .post {
-    padding: 1em;
     margin-bottom: 3em;
     background-color: #ffffff;
     border: 1px solid #e6e6e6;
     border-radius: 10px;
+    width: 614px;
+    height: auto;
+}
+.post-title {
+    padding: 1em 1em 0em 1em;
+    font-family: Segoe Ui;
+    color: black;
+    margin: 0px 0px 10px 0px;
+}
+.post-img {
+    width: 614px;
+    height: auto;
+}
+.post-text {
+    font-family: Segoe Ui;
+    color: black;
+    padding: 0em 1em 0em 1em;
+}
+.post-author {
+    font-size: 0.9em;
+    padding: 0em 1em 1em 1em;
 }

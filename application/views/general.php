@@ -1,7 +1,6 @@
 <div id="main">
     <div class="header">
-        <h1>MIV</h1>
-        <h2>inventory made easy</h2>
+        <img style="height: 70px" src="<?php echo base_url(); ?>/img/miv-logo.png"></img>
     </div>
 
     <div class="content">
