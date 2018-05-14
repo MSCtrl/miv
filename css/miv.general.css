@@ -35,3 +35,28 @@
     font-size: 0.9em;
     padding: 0em 1em 1em 1em;
 }
+
+.post-archive-menu {
+    width: 200px;
+    height: 100px;
+    background-color: #ffffff;
+    border: 1px solid #003e52;
+    border-radius: 10px;
+    top: 7em;
+    right: 3em;
+    position: fixed;
+    padding: 1em 1em 2em 1em;
+}
+.post-archive-p {
+    font-family: Segoe Ui;
+    font-size: 0.9;
+}
+.post-archive-a {
+    font-family: Segoe Ui;
+    font-size: 0.9em;
+    background: linear-gradient(90deg, #003e52, #199ab4);
+    color: white;
+    padding: 5px 8px 5px 8px;
+    text-decoration: none;
+    border-radius: 5px;
+}

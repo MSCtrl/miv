@@ -9,6 +9,11 @@
         ?>
     </div>
 
+    <div class="post-archive-menu">
+        <p class="post-archive-p">Posts of more than <?php echo $this->config->item('uptime'); ?> days ago can be found in the archive.</p>
+        <a class="post-archive-a" href="#">Browse Archive</a>
+    </div>
+
 </div>
 </div>
 </body>

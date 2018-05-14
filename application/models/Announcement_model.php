@@ -37,7 +37,10 @@
                 $str .= "<div class=\"post\">";
                     $str .= "<h4 class=\"post-title\">" . $row->title . "</h4>";
 
+                    if (($row->images)) {
                     $str .= "<img class=\"post-img\" src=\"data:image/jpeg;base64,".base64_encode($row->images)."\" />";
+                    }
+                    
                     $str .= "<p class=\"post-text\">" . $row->contents . "</p>";
 
                     $str .= "<p class=\"post-author\">" . $row->author . " " . $row->ance_date . " " . $row->ance_time . "</p>";
