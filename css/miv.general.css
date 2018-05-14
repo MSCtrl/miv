@@ -1,6 +1,7 @@
 .header {
     background: linear-gradient(90deg, #003e52, #199ab4);
     color: white;
+    margin-bottom: 2em;
 }
 .header h2 {
     color: white;
@@ -17,6 +18,7 @@
 .post-title {
     padding: 1em 1em 0em 1em;
     font-family: Segoe Ui;
+    font-weight: normal;
     color: black;
     margin: 0px 0px 10px 0px;
 }

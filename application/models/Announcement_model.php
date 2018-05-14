@@ -29,13 +29,13 @@
 
         public function get_announcement2() {
             $uptime = $this->config->item('uptime');
-            $sql = "SELECT * FROM announcements WHERE ance_date <= '".date('Y-m-d')." 00:00:00' AND ance_date >= '".date('Y-m-d', strtotime('-'.$uptime .' days'))." 00:00:00'";
+            $sql = "SELECT * FROM announcements WHERE ance_date <= '".date('Y-m-d')." 00:00:00' AND ance_date >= '".date('Y-m-d', strtotime('-'.$uptime .' days'))." 00:00:00' ORDER BY ance_date DESC";
             $query = $this->db->query($sql);
             $str = '';
             foreach ($query->result() as $row)
             {
                 $str .= "<div class=\"post\">";
-                    $str .= "<h3 class=\"post-title\">" . $row->title . "</h3>";
+                    $str .= "<h4 class=\"post-title\">" . $row->title . "</h4>";
 
                     $str .= "<img class=\"post-img\" src=\"data:image/jpeg;base64,".base64_encode($row->images)."\" />";
                     $str .= "<p class=\"post-text\">" . $row->contents . "</p>";
