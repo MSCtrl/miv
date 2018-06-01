@@ -1,10 +1,22 @@
 .header {
+    z-index: 2;
     background: linear-gradient(90deg, #003e52, #199ab4);
     color: white;
-    margin-bottom: 2em;
+    position: sticky;
+    top: 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.header h2 {
-    color: white;
+
+#logo {
+    height: 4em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    margin-top: 3em;
 }
 
 .post {
@@ -18,7 +30,7 @@
 .post-title {
     padding: 1em 1em 0em 1em;
     font-family: Segoe Ui;
-    font-weight: normal;
+    font-weight: bold;
     color: black;
     margin: 0px 0px 10px 0px;
 }

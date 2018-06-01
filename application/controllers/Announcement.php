@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 
-    class General extends CI_Controller {
+    class Announcement extends CI_Controller {
 
 
         public function __construct() {
@@ -16,14 +16,14 @@
             {
                 redirect(base_url());
             } else {
-                $this->load->view('cmenu' , array('viewname'=>'general')); /* cmenu: constant menu */
-                $this->load->view('general');
+                $this->load->view('cmenu' , array('viewname'=>'announcement')); /* cmenu: constant menu */
+                $this->load->view('announcement');
             }
-        }
 
-        public function logout() {
-            $this->session->sess_destroy();
-            redirect(base_url());
+            // Validation rules
+            $this->form_validation->set_rules('title', 'title', 'required');
+            $this->form_validation->set_rules('contents', 'contents', 'required');
+
         }
 
     }

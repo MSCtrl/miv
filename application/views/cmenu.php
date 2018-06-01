@@ -13,7 +13,22 @@
             <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>css/normalize.css" media="screen,projection"/>
             <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>css/pure-release-1.0.0/pure.css"  media="screen,projection"/>
             <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>css/miv.cmenu.css" media="screen,projection"/>
-            <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>css/<?php echo $stylesheet; ?>" media="screen,projection"/>
+        <?php
+            // if $vn is not present in the config
+            if (!$viewname) {
+                echo "<!-- this view has no js or css-->";
+            }
+            else {
+                foreach ($this->config->item($viewname) as $key => $value) {
+                    if ($value=="css") {
+                        echo "<link type=\"text/css\" rel=\"stylesheet\" href=\"".base_url()."css/".$key."\" media=\"screen,projection\"/>";
+                    }
+                    elseif ($value=="js") {
+                        echo "<!-- js is not supported yet -->";
+                    }
+                }
+            }
+        ?>
         <!--<![endif]-->
 </head>
 

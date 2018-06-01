@@ -23,6 +23,9 @@ body {
 ** They are positioned side by side therefore these style settings
 ** are solely to achieve such intended visuals.
 */
+#menu {
+    z-index: 3;
+}
 .menu-container {
     width: auto;
     height: 2em; /* this property might introduce problem */
