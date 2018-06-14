@@ -1,6 +1,7 @@
 #codeigniter 3
 .htaccess
 application/logs/*
+temp/*
 !application/logs/index.html
 !application/logs/.htaccess
 /vendor/

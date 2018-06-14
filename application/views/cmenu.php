@@ -21,10 +21,14 @@
             else {
                 foreach ($this->config->item($viewname) as $key => $value) {
                     if ($value=="css") {
-                        echo "<link type=\"text/css\" rel=\"stylesheet\" href=\"".base_url()."css/".$key."\" media=\"screen,projection\"/>";
+                        echo "<link type=\"text/css\" rel=\"stylesheet\" href=\"";
+                        echo base_url();
+                        echo "css/".$key."\" media=\"screen,projection\"/>";
                     }
                     elseif ($value=="js") {
-                        echo "<!-- js is not supported yet -->";
+                        echo "<script src=\"";
+                        echo base_url();
+                        echo "js/".$key."\"></script>";
                     }
                 }
             }

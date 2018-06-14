@@ -1,6 +1,35 @@
-#inputfile_img {
+#form-background {
+    background: linear-gradient(90deg, #003e52, #199ab4);
+    height: auto;
+    width: auto;
+    padding: 3em;
+}
+
+#img_inputfile {
     display: none;
 }
-#imgbutton {
-    
+
+
+.button-success {
+    color: white;
+    background: rgb(28, 184, 65);
+}
+
+.right-panel {
+    border: 1px white dotted;
+    height: auto;
+    width: auto;
+}
+.img-up-preview {
+    height: auto;
+    width: 500px;
+}
+
+
+
+h3 {
+    color: white;
+}
+label {
+    color: white;
 }
